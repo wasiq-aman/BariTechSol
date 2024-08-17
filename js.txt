@@ -1,0 +1,20 @@
+Express.js: Its a node.js frame work use for backend development.middleware aur routing se application ko organize karne mein asaani hoti hai.
+REST API: jab client resource maangta hai toh server wapis us resource ko standard form le aata hai.
+1.Client  server seperation : client khaaali request bhejega aur server uska response karega bs one way interaction hoga
+2.uniform interface : all request and all resources eik hi hi protocol ko use kareti hain jo ke JSON ka hota hai. 
+3.stateless:Har interaction independent hota hai aur har client ki request new hoti hai kiun ke server ko pichli request ka pta nh hota
+4.Layered System:client aur server ke darmiyaan aur bhi layers hoti hain jo traafic ko distripute aur handle karti hain sercurity dekhti hain.toh is liye server aur client ke msg ko eik proper protocol mein rakha jata taake woh dusri layer tk na jaye 
+5.Cacheable:response of restful web service request store in a cache server.  
+6.Code on demand:yeh optional hota hai. ke api client ko computer code response mein.
+
+SOAP:messaging protocol hai jo system aur application ke exchanging of information ke liye use hota hai.
+Difference Between SOAP and REST API:
+soap uses XML format while rest uses any method 
+soap is a protocol aur rest is a set of guidlines
+Synchronous: line by line execution of code
+Asynchronous: In parallel 
+
+Callback: when function is passed as a arguement in another functuion 
+callback hell: when  many call back function are called then callback hell occour 
+Promises: advancement of callback function to get rid of callback hell basically aur yeh resove yah reject hota hai through .then aur .catch ke method se is mein promise chaining hoti jisse hum multiple function ko simultaneously execute krsakte hain
+Asyn await:it is the advancement in promise to make a proper synchronous function.is mein function ke keyword se pehle asyn aata hai aur ussi function mein await aata hai agr wait karwana ho toh aur promises ko use karta hai function mein apne.

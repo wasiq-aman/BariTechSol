@@ -1,0 +1,151 @@
+java script variable:
+there 3 types of variables in javascript 
+
+Comparison basis	var		let	const
+Scope			Function	Block	Block
+Hoisted			Yes		No	No
+Reassign		Yes		Yes	No
+Redeclare		Yes		No	No
+Bind This		Yes		No	No
+
+Data Type:
+Number   ( javascript always store numbers as a floating point it doesn't distinction b/w decimal and integer and floating point is 64 bits)
+String       
+Boolean	( has only two values true / false)
+Null	(when any variable value is unknown we should use null which means empty)
+Undefined (when variable is declare but not initialize then it will contain a undefined value & manually you can aasign a value to variable )
+BigInt 	(when we want to store very big value which is bigger than 64 bit then we use bigInt instead of number and at the end of value we have to add 'n' )
+Sybmol	(for uniqueness)
+
+Type Conversion:
+There are two types of conversion 
+Implicit Conversion: It is done automatically  by javascript yeh string mein convert kardeta hai
+For Example: "100" + 24  it concatenate it gives the answer 10024
+
+Explicit Conversion: yeh programmer karta hai  yeh string ko number mein krdeta hai except  + operator ke 
+For Ecample: '100' / 2  it give the answer 50
+
+Strict Mode :
+It makes code safer prevent from error such as initializing the variable without declaration or using the reserved keywords as an identifier & future compatibility.
+
+Reserved Keywords:
+These are the predefined keyword which use to serve the builtin fucntionality of the language.
+For Example: 
+for,while,if,else etc
+
+Airthmetic Operators:
+Addition,subtraction,multiplication,division,modulus or reminder, increment & decrement.
+
+Comparison Operator: 
+==
+====
+!=
+!==
+>
+<
+>=
+<=
+
+Logical Operator:
+&&       AND
+||       OR
+!        NOT
+
+Conditional Operator:
+ternary Operator
+first it check the condtion before the  ? a true fasle condition it print the staement according to the condtion
+var res = num1 > num2 ? "num1 is greater than num2" : "num2 is greater than num1";
+
+Nullish Coalescing Operator:
+In js ?? is known as nullish operator its It takes two operands and returns the first operand if it is not null or undefined. Otherwise, it returns the second operand.
+obj ?? obj1
+  
+obj.name?.value
+its mean ke agar obj.name null nhe hai toh uski value property ko access karlo otherwise null aur undefined return krdo.
+
+Loops:
+while loop  (when we don't know the number of  iterations  but the condition always true)
+do while loop (when we want to iterate atleast one time  )
+for loop  (when we know the number of  iterations )
+foreach loop (mainly use for array)
+for in loop (for traversing of  object properties)
+for of loop (for traversing of  object properties more efficient than for in)
+
+Grouping Operator: jese humein airthmatic operation perform karna hai toh main chahta hun pehle 3+1 ho then usko jo answer aaye usko 2 se divid krdun then we use grouping operator ().
+Yield Operator: yeh operator 
+Spread Operator:jo array, object wagera se data copy karta hai
+
+
+
+Type Script:
+TYPES 
+any type: superset of all types
+unknown: check karega 2  dafa
+never: har dafa error dega type assign nh hosakti
+builtin type: boolean, number, string, void, null, undefined
+user defined type:array, enum, interfaces & classes
+Inference: typescript guess the type its own and never redeclear it
+annotatios: we tell the type
+tuple: this type is use when we want to make an array of different types
+enum: when we want to constant the values
+union:it combine multiple types into one type
+Type Assertion: typescript allow karta hai variable ki daa type change krne ko toh uske liye type assertion krte hain <> target dete hain is mein 
+
+Node.js:
+Synchronous: line by line execution of code
+Asynchronous: In parallel 
+
+Callback: when function is passed as a arguement in another functuion 
+callback hell: when nested  conditional statment or many call back function are called then callback hell occour 
+Promises: advancement of callback function to get rid of callback hell basically aur yeh resove yah reject hota hai through .then aur .catch ke method se is mein promise chaining hoti jisse hum multiple function ko simultaneously execute krsakte hain
+Asyn await:it is uses the promises to do better execution in a asynchronous manner. function se pehle asyn aayega aur await aysn function ke ander hi aayega
+
+	promises ke bad kia cheez aii hai jisse hit lagagi 
+
+Express.js: Its a node.js frame work use for backend development.middleware aur routing se application ko organize karne mein asaani hoti hai.
+REST API: jab client resource maangta hai toh server wapis us resource ko standard form le aata hai.
+1.Client  server seperation : client khaaali request bhejega aur server uska response karega bs one way interaction hoga
+2.uniform interface : all request and all resources eik hi hi protocol ko use kareti hain jo ke JSON yah koi aur hota hai. 
+3.stateless:Har interaction independent hota hai aur har client ki request new hoti hai kiun ke server ko pichli request ka pta nh hota
+4.Layered System:client aur server ke darmiyaan aur bhi layers hoti hain jo traafic ko distripute aur handle karti hain sercurity dekhti hain.toh is liye server aur client ke msg ko eik proper protocol mein rakha jata taake woh dusri layer tk na jaye 
+5.Cacheable:response of restful web service request store in a cache server.  
+6.Code on demand:yeh optional hota hai. ke api client ko computer code response mein.
+
+SOAP:messaging protocol hai jo system aur application ke exchanging of information ke liye use hota hai.
+Difference Between SOAP and REST API:
+soap uses XML format while rest uses any method 
+soap is a protocol aur rest is a set of guidlines
+
+different types of API Protocol:
+PUBLIC woh hoti hain jinhe har koi use karsakta hai.
+INTERNAL woh hoti hai jo kisi company ke ander data exchange karne ke liye kaam aati hain.
+REST ek architecture style hai jo HTTP protocol par bana hai. Isme resources ko represent kiya jata hai url mein  aur unke saath CRUD operations perform kiye jaate hain.
+SOAP  XML par bani hoti hai. Isme messages ko XML format mein define kiya jata hai aur un messages ko HTTP ya dusre protocols ke zariye bheja jata hai
+RPC ek protocol hai jo client aur server ke darmiyan communication ko facilitate karta hai. Client ek remote server par kisi function ko call karta hai jise woh local function ke tarah use karta hai.
+GraphQL ek query language hai jo APIs ke liye istemal hoti hai. Isme clients ko flexibility milti hai ke woh sirf un data fields ko maang sakein jo unko zaroorat hai.
+
+API Formats:
+XML
+JSON
+YAML
+MessagePack
+CBOR (Concise Binary Object Representation)
+CSV (Comma-Separated Values)
+Avro
+Protocol Buffers
+
+
+Node.js Project detail:
+Package.json: project ka meta deta contain karti hai yeh file
+Node Modules: is mein jo dependencies libraries humne package.json mein di hoti hain woh hoti hain
+package-lock.json:is mein exact versions of packages aur unki dependencies hoti hain
+
+npm init:install the package.json file
+npm i: install the modules
+npm i express: install express
+npm i nodemon: yeh server ko khud restart krdeta hai taake  manually humein bar baar karna na pad
+
+find() vs loop:
+find tabh use hota hai jab appne kisi data mein koi eik element dhoondna ho 
+loop tabh use hota hai jab aapne kisi data ke har element ko iterate krna ho
+
